@@ -16,7 +16,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
-
+    //variable
     EditText editTextUsername, editTextPassword;
 
     @Override
@@ -28,10 +28,10 @@ public class MainActivity extends AppCompatActivity {
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
 
         // If user is already connected
-        if (!SharedPrefManager.getInstance(this).isLoggedIn()) {
+        /*if (!SharedPrefManager.getInstance(this).isLoggedIn()) {
             finish();
             startActivity(new Intent(this, HomeActivity.class));
-        }
+        }*/
 
         //if user presses on login
         //calling the method login
