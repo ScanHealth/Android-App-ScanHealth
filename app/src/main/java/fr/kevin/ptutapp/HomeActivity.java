@@ -1,5 +1,6 @@
 package fr.kevin.ptutapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -36,10 +37,10 @@ public class HomeActivity extends AppCompatActivity {
                         return true;
                     case R.id.addProduct:
                         //!!! TODO: Make addProduct activity
-                        /*startActivity(new Intent(getApplicationContext()
-                                ,AddProduct.class));
+                        startActivity(new Intent(getApplicationContext()
+                                ,ScannerActivity.class));
                         overridePendingTransition(0,0);
-                        return true;*/
+                        return true;
                 }
                 return false;
             }

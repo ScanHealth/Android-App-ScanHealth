@@ -3,6 +3,9 @@
     package="fr.kevin.ptutapp">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
     <application
 
         android:allowBackup="true"
@@ -14,6 +17,12 @@
         android:usesCleartextTraffic="true">
         <activity android:name=".RegisterActivity"></activity>
         <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".ScannerActivity"></activity>
+        <activity android:name=".CaptureAct"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

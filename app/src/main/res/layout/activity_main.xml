@@ -44,6 +44,14 @@
             android:layout_marginTop="8dp"
             android:text="Login" />
 
+        <Button
+            android:id="@+id/buttonBypassLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Bypass Login" />
+
         <TextView
             android:id="@+id/textViewRegister"
             android:layout_width="match_parent"

@@ -42,6 +42,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.buttonBypassLogin).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+            }
+        });
+
         //if user presses on not registered
         findViewById(R.id.textViewRegister).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -141,4 +148,5 @@ public class MainActivity extends AppCompatActivity {
         UserLogin ul = new UserLogin();
         ul.execute();
     }
+
 }
